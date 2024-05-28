@@ -18,7 +18,7 @@ public class TaskController {
     private TaskService taskService;
 
     @PostMapping("/task")
-    public ResponseEntity<Task> createTask(@RequestBody Task task) {
+    public ResponseEntity<Task> createTask (@RequestBody Task task) {
         Task taskToSave = new Task();
         taskToSave.setDescription(task.getDescription());
         taskToSave.setAssignee(task.getAssignee());
