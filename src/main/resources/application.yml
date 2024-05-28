@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://brigmanevia:70qjfbh3geiavRrP@clustereviatar.srkgnuw.mongodb.net/?retryWrites=true&w=majority&appName=ClusterEviatar
+      database: Tasks
