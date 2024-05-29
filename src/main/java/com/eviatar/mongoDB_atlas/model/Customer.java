@@ -6,16 +6,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "tasks")
+@Document(collection = "customers")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Task {
+public class Customer {
     @Id
-    private String taskId;
-    private String description;
-    private Integer severity;
-    private String assignee;
-    private String storyPoint;
-
+    private String id;
+    private String fullName;
+    private String email;
+    private String phoneNumber;
 }
